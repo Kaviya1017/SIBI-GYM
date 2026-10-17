@@ -1,0 +1,44 @@
+services:
+  - type: web
+    name: sibi-sports-club
+    runtime: node
+    rootDir: Admin
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    plan: starter
+    disk:
+      name: sibi-sports-club-data
+      mountPath: /opt/render/project/src/Admin/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_VERSION
+        value: 22.14.0
+      - key: NODE_ENV
+        value: production
+      - key: APP_TIMEZONE
+        value: Asia/Kolkata
+      - key: DATABASE_FILE
+        value: /opt/render/project/src/Admin/data/elevate.sqlite
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: ADMIN_NAME
+        value: Sibi Administrator
+      - key: ADMIN_EMAIL
+        value: admin@sibisportsclub.example
+      - key: ADMIN_PASSWORD
+        generateValue: true
+      - key: WHATSAPP_ACCESS_TOKEN
+        sync: false
+      - key: WHATSAPP_PHONE_NUMBER_ID
+        sync: false
+      - key: WHATSAPP_GRAPH_VERSION
+        value: v22.0
+      - key: WHATSAPP_TEMPLATE_NAME
+        sync: false
+      - key: WHATSAPP_TEMPLATE_LANGUAGE
+        value: en_US
+      - key: WHATSAPP_WEBHOOK_VERIFY_TOKEN
+        sync: false
+      - key: WHATSAPP_APP_SECRET
+        sync: false
