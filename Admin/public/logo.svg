@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" role="img" aria-label="Sibi Sports Club">
+  <rect width="520" height="120" rx="18" fill="#0b0e12"/>
+  <path d="M28 20h76l-15 80H28z" fill="#ff7900"/>
+  <path d="M55 41h22c12 0 21 7 21 18 0 7-4 12-10 15 8 3 12 9 12 17 0 12-9 19-23 19H55V41zm18 15v11h7c5 0 8-2 8-6s-3-5-8-5h-7zm0 25v13h9c5 0 8-2 8-7s-3-6-9-6h-8z" fill="#101318"/>
+  <text x="130" y="58" fill="#f6f7f8" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="800" letter-spacing="5">SIBI</text>
+  <text x="132" y="91" fill="#aab2be" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" letter-spacing="4">SPORTS CLUB</text>
+</svg>
